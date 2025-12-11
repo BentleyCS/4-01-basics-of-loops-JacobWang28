@@ -1,13 +1,13 @@
 #All questions must use a loop for full points.
-from gzip import write32u
+
 
 
 def oddNumbers(n:int) ->str:
     result=""
-    for i in range (1,3+1):
+    for i in range (1,n+1):
         if i%2!=0:
             result=result+str(i)+ " "
-    return result
+    return result.strip()
 
     # Print out all odd numbers from 1 to n(inclusive) in a single string seperated by spaces.
     # example oddNumbers(5) -> "1 3 5"
