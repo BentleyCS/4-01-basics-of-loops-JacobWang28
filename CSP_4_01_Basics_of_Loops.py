@@ -19,7 +19,7 @@ oddNumbers(5)
 
 def backwards(n)-> str:
     if n<1:
-        return" "
+        return""
     num=[]
     for i in range (n,0, -1):
         num.append(str(i))
@@ -95,8 +95,8 @@ def fizzBuzzContinuous(n):
         elif i%5==0:
             result+="buzz "
         else:
-            result+=str(i)+""
-    return result
+            result+=str(i)+" "
+    return result.strip()
 print(fizzBuzzContinuous(20))
 
 
