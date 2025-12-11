@@ -114,13 +114,14 @@ print(fizzBuzzContinuous(20))
 
 
 def collatz(n):
+    sequence=str(n)
     while n!=1:
-        print(n)
         if n%2==0:
-            n=n//2
+             n=n//2
         else:
-            n=n*3+1
-        print(1)
+            n=3*n+1
+        sequence+=" "+str(n)
+    return sequence
 print(collatz(6))
 
     # Modify this function such that it mimics the collatz conjecture starting at n
@@ -138,11 +139,11 @@ def fibonacci(n):
     sequence="0"
     if n>1:
         a,b=0,1
-        sequence+="1"
+        sequence+=" 1"
         count=2
         while count<n:
             nextnumber=a+b
-            sequence+=""+str(nextnumber)
+            sequence+=" "+str(nextnumber)
             a,b=b,nextnumber
             count+=1
     return sequence
